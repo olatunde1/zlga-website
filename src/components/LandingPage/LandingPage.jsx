@@ -10,6 +10,7 @@ import {
   SimpleGrid,
   Button,
   useColorModeValue,
+  background,
 } from '@chakra-ui/react';
 import NavBar from '../Navbar';
 import image1 from '../../image/partner/im1.jpg';
@@ -458,6 +459,10 @@ export default function LandingPage() {
                   border={'0.506748px solid #106804'}
                   background={'#ffffff'}
                   borderRadius={'5.06748px'}
+                  _hover={{ bg: '#106804', color:'white' }}
+              //   rounded="md"
+              //   overflow="hidden"
+              //   bg={useColorModeValue('white', 'gray.800')}
                 >
                   Learn more
                 </Button>
@@ -475,6 +480,7 @@ export default function LandingPage() {
                 '2.02699px 4.05399px 20.2699px 3.04049px rgba(0, 0, 0, 0.1)'
               }
               borderRadius={'5.06748px'}
+              
               //   _hover={{ shadow: 'lg' }}
               //   rounded="md"
               //   overflow="hidden"
@@ -533,6 +539,7 @@ export default function LandingPage() {
                   border={'0.506748px solid #106804'}
                   background={'#ffffff'}
                   borderRadius={'5.06748px'}
+                  _hover={{ bg: '#106804', color:'white' }}
                 >
                   Learn more
                 </Button>
@@ -552,6 +559,7 @@ export default function LandingPage() {
                 fontSize={'20px'}
                 fontStyle={'normal'}
                 color={'#ffffff'}
+                _hover={{ bg: 'white', color:'#106804', border:'2px solid #106804' }}
               >
                 Explore More Courses
               </Button>
