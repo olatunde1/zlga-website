@@ -44,7 +44,15 @@
     top: 178px;
 }
 
-/* .css-kyxknw {
-    position: relative;
-    background-color: #F3FFF1;
-} */
+.read-or-hide{
+    color: #000000;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.roundGlobe{
+    background-image: url(./image/tranfromvideo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100% !important;
+}

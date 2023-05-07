@@ -13,12 +13,23 @@ import {
 } from '@chakra-ui/react';
 import NavBar from '../Navbar';
 import Map from '../../image/map.svg';
-import image1 from '../../image/partner/image1.svg';
-import image2 from '../../image/partner/image2.svg';
-import image3 from '../../image/partner/image3.svg';
-import image4 from '../../image/partner/image4.svg';
-import image5 from '../../image/partner/image5.svg';
-import image6 from '../../image/partner/image6.svg';
+import image1 from '../../image/partner/im1.jpg';
+import image2 from '../../image/partner/im2.jpg';
+import image3 from '../../image/partner/im3.jpg';
+import image4 from '../../image/partner/im4.jpg';
+import image5 from '../../image/partner/im5.jpg';
+import image6 from '../../image/partner/im6.jpg';
+import image7 from '../../image/partner/im7.jpg';
+import image8 from '../../image/partner/im8.jpg';
+import image9 from '../../image/partner/im9.jpg';
+import image10 from '../../image/partner/im10.jpg';
+import image11 from '../../image/partner/im11.jpg';
+import image12 from '../../image/partner/im12.jpg';
+import image13 from '../../image/partner/im13.jpg';
+import image14 from '../../image/partner/im14.jpg';
+import image15 from '../../image/partner/im15.jpg';
+import image16 from '../../image/partner/im16.jpg';
+import image17 from '../../image/partner/im17.jpg';
 import Marquee from 'react-fast-marquee';
 import Slider from './Slider';
 import rec1 from '../../image/Rectangle1.svg';
@@ -178,18 +189,169 @@ export default function LandingPage() {
             maxWidth={{ base: '100%', md: '151px' }}
             // left={'-33px'}
             // top={'42px'}
-            // marginRight={'87px'}
+            marginRight={'87px'}
             marginTop={'30px'}
             marginBottom={'30.03px'}
             src={image6}
           />
+          <Image
+            // position={{base:'none', md:'absolute'}}
+            height="59.97px"
+            // width="100%"
+            objectFit="contain"
+            maxWidth={{ base: '100%', md: '151px' }}
+            // left={'-33px'}
+            // top={'42px'}
+            marginRight={'87px'}
+            marginTop={'30px'}
+            marginBottom={'30.03px'}
+            src={image7}
+          />
+          <Image
+            // position={{base:'none', md:'absolute'}}
+            height="59.97px"
+            // width="100%"
+            objectFit="contain"
+            maxWidth={{ base: '100%', md: '151px' }}
+            // left={'-33px'}
+            // top={'42px'}
+            marginRight={'87px'}
+            marginTop={'30px'}
+            marginBottom={'30.03px'}
+            src={image8}
+          />
+          <Image
+            // position={{base:'none', md:'absolute'}}
+            height="59.97px"
+            // width="100%"
+            objectFit="contain"
+            maxWidth={{ base: '100%', md: '151px' }}
+            // left={'-33px'}
+            // top={'42px'}
+            marginRight={'87px'}
+            marginTop={'30px'}
+            marginBottom={'30.03px'}
+            src={image9}
+          />
+          <Image
+            // position={{base:'none', md:'absolute'}}
+            height="59.97px"
+            // width="100%"
+            objectFit="contain"
+            maxWidth={{ base: '100%', md: '151px' }}
+            // left={'-33px'}
+            // top={'42px'}
+            marginRight={'87px'}
+            marginTop={'30px'}
+            marginBottom={'30.03px'}
+            src={image10}
+          />
+          <Image
+            // position={{base:'none', md:'absolute'}}
+            height="59.97px"
+            // width="100%"
+            objectFit="contain"
+            maxWidth={{ base: '100%', md: '151px' }}
+            // left={'-33px'}
+            // top={'42px'}
+            marginRight={'87px'}
+            marginTop={'30px'}
+            marginBottom={'30.03px'}
+            src={image11}
+          />
+          <Image
+            // position={{base:'none', md:'absolute'}}
+            height="59.97px"
+            // width="100%"
+            objectFit="contain"
+            maxWidth={{ base: '100%', md: '151px' }}
+            // left={'-33px'}
+            // top={'42px'}
+            marginRight={'87px'}
+            marginTop={'30px'}
+            marginBottom={'30.03px'}
+            src={image12}
+          />
+          <Image
+            // position={{base:'none', md:'absolute'}}
+            height="59.97px"
+            // width="100%"
+            objectFit="contain"
+            maxWidth={{ base: '100%', md: '151px' }}
+            // left={'-33px'}
+            // top={'42px'}
+            marginRight={'87px'}
+            marginTop={'30px'}
+            marginBottom={'30.03px'}
+            src={image13}
+          />
+          <Image
+            // position={{base:'none', md:'absolute'}}
+            height="59.97px"
+            // width="100%"
+            objectFit="contain"
+            maxWidth={{ base: '100%', md: '151px' }}
+            // left={'-33px'}
+            // top={'42px'}
+            marginRight={'87px'}
+            marginTop={'30px'}
+            marginBottom={'30.03px'}
+            src={image14}
+          />
+          <Image
+            // position={{base:'none', md:'absolute'}}
+            height="59.97px"
+            // width="100%"
+            objectFit="contain"
+            maxWidth={{ base: '100%', md: '151px' }}
+            // left={'-33px'}
+            // top={'42px'}
+            marginRight={'87px'}
+            marginTop={'30px'}
+            marginBottom={'30.03px'}
+            src={image15}
+          />
+          <Image
+            // position={{base:'none', md:'absolute'}}
+            height="59.97px"
+            // width="100%"
+            objectFit="contain"
+            maxWidth={{ base: '100%', md: '151px' }}
+            // left={'-33px'}
+            // top={'42px'}
+            marginRight={'87px'}
+            marginTop={'30px'}
+            marginBottom={'30.03px'}
+            src={image16}
+          />
+          <Image
+            // position={{base:'none', md:'absolute'}}
+            height="59.97px"
+            // width="100%"
+            objectFit="contain"
+            maxWidth={{ base: '100%', md: '151px' }}
+            // left={'-33px'}
+            // top={'42px'}
+            marginRight={'87px'}
+            marginTop={'30px'}
+            marginBottom={'30.03px'}
+            src={image17}
+          />
+         
         </Marquee>
       </Box>
       <Slider />
-      <Box paddingBottom={'57.76px'} position={'relative'}>
+
+      <Box
+      width={'1440px'}
+      height={'1014px'}
+      top={'1899px'}
+      position={'absolute'}
+      
+      >
         <Container maxW={'1440px'}>
           <Stack direction={{ base: 'column', md: 'row' }}>
-            <Stack position={'relative'}>
+            <Stack>
               <Heading>
                 <Text
                   position="absolute"
@@ -398,14 +560,20 @@ export default function LandingPage() {
           </Stack>
         </Container>
       </Box>
-      <Box position={'relative'}>
+
+      <Box position={'absolute'}
+        width={'100%'}
+        height={'812px'}
+        top={'2917'}
+        backgroundColor={'#F3FFF1'}
+      >
         <Heading>
           <Text
             position="absolute"
             width="349px"
             height="54px"
-            //   left={'545px'}
-            // paddingTop={'94px'}
+            left={'545px'}
+            top={'74px'}
             fontSize={{ base: '3xl', sm: '4xl', lg: '36px' }}
             fontFamily={'karla'}
             lineHeight={'150.9%'}
@@ -413,25 +581,24 @@ export default function LandingPage() {
             fontWeight={'800'}
             color={'#272727'}
           >
-            {/* The Transformation */}
+            The Transformation
           </Text>
         </Heading>
+        <Image 
+        className='roundGlobe'
+          position={'absolute'}
+          width={'100%'}
+          height={'634px'}
+          left={'0px'}
+          top={'178px'}
+        />
       </Box>
+    
+              {/*###### MEET THE TEAM SECTION ########*/}
       <Box
-        className="transformation"
-        position={'relative'}
-        width={'1440px'}
-        height={'812px'}
-        top={'1000px'}
-        // paddingTop={'74px'}
-      >
-        <Container></Container>
-      </Box>
-
-      <Box
-        position={'relative'}
-        top={'929'}
-        paddingBottom={'101.58px'}
+        position={'absolute'}
+        top={'3729px'}
+        width={'100%'}
         height={'667px'}
       >
         <Container maxW={'1440px'}>
@@ -571,7 +738,25 @@ export default function LandingPage() {
           </Stack>
         </Container>
       </Box>
-      <Footer />
+      
+      <Box
+        position={'absolute'}
+        height={'849px'}
+        top={'4396px'}
+        width={'100%'} bg={useColorModeValue('#F3FFF1', '#F3FFF1')} 
+      >
+        <EventSlider />  
+      </Box>
+         
+
+              {/*###### FOOTER SECTION ######*/}
+      <Box
+        position={'absolute'}
+        top={'5531px'}
+        width={'100%'} bg={useColorModeValue('#F3FFF1', '#F3FFF1')} 
+      >
+        <Footer />
+      </Box>
     </>
   );
 }

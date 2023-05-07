@@ -4,13 +4,7 @@ import event1 from '../../../image/event1.svg';
 
 const ProductIntro = () => {
   return (
-    <Box
-        position={'absolute'}
-        width={'1440px'}
-        height={'849px'}
-        left={'0px'}
-        top={'4396px'}
-        backgroundColor={'#F3FFF1'}>
+    <Box>
     
     <Container maxW={'1440px'}>
         <Box>
@@ -44,6 +38,7 @@ const ProductIntro = () => {
       <Stack direction={{ base: 'column', md: 'row' }} position={'absolute'}>
       
           <Image
+          position={'absolute'}
             left="155px"
             top="216px"
             w="1129px"

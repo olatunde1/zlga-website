@@ -1,5 +1,3 @@
-import { ReactNode } from 'react';
-
 import {
   Box,
   Container,
@@ -23,49 +21,56 @@ const ListHeader = ({ children }) => {
 
 export default function LargeWithLogoLeft() {
   return (
-    <Box width={'1440px'}  bg={useColorModeValue('#F3FFF1', '#F3FFF1')} position={'absolute'} top={'4200px'}>
+    <Box width={'100%'} bg={useColorModeValue('#F3FFF1', '#F3FFF1')} position={'absolute'} >
     <Box
-        paddingTop={"313px"}
+        paddingTop={"118px"}
         paddingBottom={"208px"}
-     
-      color={useColorModeValue('#989898', '#989898')}>
+     >
       <Container as={Stack} maxW={'1440px'} >
         <SimpleGrid
           templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 1fr 1fr' }}
           spacing={8}>
-          <Stack spacing={6}>
+          <Stack paddingRight={'115px'} spacing={6}>
             <Image src={Logo} />
              
            
-            <Text fontSize={'sm'}>
+            <Text
+              width={'438px'}
+              fontSize={'18px'}
+              left={'100px'}
+              fontFamily={'Karla'}
+              fontWeight={'300'}
+              color={'#989898'}
+            
+            >
             ZL Global Alliance has the responsibility of ensuring that all relevant procedures and policies are complied with.
             </Text>
           </Stack>
           <Stack align={'flex-start'} >
-            <ListHeader >Our Services</ListHeader>
-            <Link href={'#'}>School</Link>
-            <Link href={'#'}>Medical Services</Link>
-            <Link href={'#'}>ZL Store</Link>
-            <Link href={'#'}>Environmental Management</Link>
+            <ListHeader  >Our Services</ListHeader>
+            <Link color={'#989898'} fontSize={'18px'} fontFamily={'Karla'} href={'#'}>School</Link>
+            <Link color={'#989898'} fontSize={'18px'} fontFamily={'Karla'} href={'#'}>Medical Services</Link>
+            <Link color={'#989898'} fontSize={'18px'} fontFamily={'Karla'} href={'#'}>ZL Store</Link>
+            <Link color={'#989898'} fontSize={'18px'} fontFamily={'Karla'} href={'#'}>Environmental Management</Link>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Resources</ListHeader>
-            <Link href={'#'}>Contact Ust</Link>
-            <Link href={'#'}>Careers</Link>
-            <Link href={'#'}>FAQs</Link>
-            <Link href={'#'}>Events</Link>
+            <Link color={'#989898'} fontSize={'18px'} fontFamily={'Karla'} href={'#'}>Contact Ust</Link>
+            <Link color={'#989898'} fontSize={'18px'} fontFamily={'Karla'} href={'#'}>Careers</Link>
+            <Link color={'#989898'} fontSize={'18px'} fontFamily={'Karla'} href={'#'}>FAQs</Link>
+            <Link color={'#989898'} fontSize={'18px'} fontFamily={'Karla'} href={'#'}>Events</Link>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Connect with us</ListHeader>
-            <Link href={'#'}>LinkedIn</Link>
-            <Link href={'#'}>Twitter</Link>
-            <Link href={'#'}>Instagram</Link>
-            <Link href={'#'}>Facebook</Link>
+            <Link color={'#989898'} fontSize={'18px'} fontFamily={'Karla'} href={'#'}>LinkedIn</Link>
+            <Link color={'#989898'} fontSize={'18px'} fontFamily={'Karla'} href={'#'}>Twitter</Link>
+            <Link color={'#989898'} fontSize={'18px'} fontFamily={'Karla'} href={'#'}>Instagram</Link>
+            <Link color={'#989898'} fontSize={'18px'} fontFamily={'Karla'} href={'#'}>Facebook</Link>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Legal</ListHeader>
-            <Link href={'#'}>Privacy Policy</Link>
-            <Link href={'#'}>Terms and Conditions</Link>
+            <Link color={'#989898'} fontSize={'18px'} fontFamily={'Karla'} href={'#'}>Privacy Policy</Link>
+            <Link color={'#989898'} fontSize={'18px'} fontFamily={'Karla'} href={'#'}>Terms and Conditions</Link>
           </Stack>
         </SimpleGrid>
       </Container>
