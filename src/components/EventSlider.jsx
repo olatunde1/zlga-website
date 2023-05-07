@@ -3,6 +3,10 @@ import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Event1 from '../components/LandingPage/EventSlider/Event1'
+import Event2 from '../components/LandingPage/EventSlider/Event2'
+import Event3 from '../components/LandingPage/EventSlider/Event3'
+
+
 
 // Import Swiper styles
 import 'swiper/css';
@@ -40,7 +44,8 @@ export default function PictureSlider() {
         className="mySwiper"
       >
         <SwiperSlide>{Event1}</SwiperSlide>
-        
+        <SwiperSlide>{Event2}</SwiperSlide>
+        <SwiperSlide>{Event3}</SwiperSlide>
         
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>

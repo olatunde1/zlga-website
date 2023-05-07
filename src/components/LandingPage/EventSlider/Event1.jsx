@@ -30,15 +30,16 @@ const ProductIntro = () => {
         fontSize={'24px'}
         lineHeight={'150.9%'}
         fontStyle={'normal'}
+        color={'#989898'}
       >
         Check out our latest events at ZL Global Alliance
       </Text>
       {/* <Box pl={{base:'none', md:'104px'}} pr={{base:'none', md:'95px'}}> */}
         </Box>
-      <Stack direction={{ base: 'column', md: 'row' }} position={'absolute'}>
+      <Stack direction={{ base: 'column', md: 'row' }}>
       
           <Image
-          position={'absolute'}
+            position={'absolute'}
             left="155px"
             top="216px"
             w="1129px"

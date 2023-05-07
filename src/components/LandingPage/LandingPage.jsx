@@ -12,7 +12,6 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import NavBar from '../Navbar';
-import Map from '../../image/map.svg';
 import image1 from '../../image/partner/im1.jpg';
 import image2 from '../../image/partner/im2.jpg';
 import image3 from '../../image/partner/im3.jpg';
@@ -40,6 +39,8 @@ import fila from '../../image/fila.svg';
 import tobi from '../../image/tobi.svg';
 import Footer from '../Footer';
 import EventSlider from '../../components/EventSlider';
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import anime from '../anime.json'
 
 export default function LandingPage() {
   return (
@@ -96,20 +97,19 @@ export default function LandingPage() {
                 <Text>90,000+ Tonnes of Trash Recycled</Text>
               </Stack>
             </Stack>
-            <Box
-            //   ml={{ base: 0, md: 5 }}
-            >
-              <Image
-                position={{ base: 'none', md: 'absolute' }}
-                height="100%"
-                // width="100%"
-                objectFit="contain"
-                maxWidth={{ base: '100%', md: '792px' }}
-                left={'623px'}
-                top={'20px'}
-                src={Map}
-              />
-            </Box>
+            
+              <Player
+                autoplay
+                loop
+                src={anime}
+                style={{ height: '300px', width: '300px' }}
+              >
+                <Controls
+                  visible={false}
+                  buttons={['play', 'repeat', 'frame', 'debug']}
+                />
+              </Player>
+           
           </Stack>
         </Container>
       </Box>
@@ -337,17 +337,15 @@ export default function LandingPage() {
             marginBottom={'30.03px'}
             src={image17}
           />
-         
         </Marquee>
       </Box>
       <Slider />
 
       <Box
-      width={'1440px'}
-      height={'1014px'}
-      top={'1899px'}
-      position={'absolute'}
-      
+        width={'1440px'}
+        height={'1014px'}
+        top={'1899px'}
+        position={'absolute'}
       >
         <Container maxW={'1440px'}>
           <Stack direction={{ base: 'column', md: 'row' }}>
@@ -561,7 +559,8 @@ export default function LandingPage() {
         </Container>
       </Box>
 
-      <Box position={'absolute'}
+      <Box
+        position={'absolute'}
         width={'100%'}
         height={'812px'}
         top={'2917'}
@@ -584,8 +583,8 @@ export default function LandingPage() {
             The Transformation
           </Text>
         </Heading>
-        <Image 
-        className='roundGlobe'
+        <Image
+          className="roundGlobe"
           position={'absolute'}
           width={'100%'}
           height={'634px'}
@@ -593,14 +592,9 @@ export default function LandingPage() {
           top={'178px'}
         />
       </Box>
-    
-              {/*###### MEET THE TEAM SECTION ########*/}
-      <Box
-        position={'absolute'}
-        top={'3729px'}
-        width={'100%'}
-        height={'667px'}
-      >
+
+      {/*###### MEET THE TEAM SECTION ########*/}
+      <Box position={'absolute'} top={'3729px'} width={'100%'} height={'667px'}>
         <Container maxW={'1440px'}>
           <Stack position={'relative'}>
             <Stack>
@@ -738,22 +732,23 @@ export default function LandingPage() {
           </Stack>
         </Container>
       </Box>
-      
+
       <Box
         position={'absolute'}
         height={'849px'}
         top={'4396px'}
-        width={'100%'} bg={useColorModeValue('#F3FFF1', '#F3FFF1')} 
+        width={'100%'}
+        bg={useColorModeValue('#F3FFF1', '#F3FFF1')}
       >
-        <EventSlider />  
+        <EventSlider />
       </Box>
-         
 
-              {/*###### FOOTER SECTION ######*/}
+      {/*###### FOOTER SECTION ######*/}
       <Box
         position={'absolute'}
         top={'5531px'}
-        width={'100%'} bg={useColorModeValue('#F3FFF1', '#F3FFF1')} 
+        width={'100%'}
+        bg={useColorModeValue('#F3FFF1', '#F3FFF1')}
       >
         <Footer />
       </Box>
