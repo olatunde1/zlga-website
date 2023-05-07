@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Event1 from '../components/LandingPage/EventSlider/Event1'
 import Event2 from '../components/LandingPage/EventSlider/Event2'
 import Event3 from '../components/LandingPage/EventSlider/Event3'
+import Event4 from '../components/LandingPage/EventSlider/Event4'
 
 
 
@@ -46,6 +47,7 @@ export default function PictureSlider() {
         <SwiperSlide>{Event1}</SwiperSlide>
         <SwiperSlide>{Event2}</SwiperSlide>
         <SwiperSlide>{Event3}</SwiperSlide>
+        <SwiperSlide>{Event4}</SwiperSlide>
         
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>

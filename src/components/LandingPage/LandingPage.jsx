@@ -39,8 +39,10 @@ import fila from '../../image/fila.svg';
 import tobi from '../../image/tobi.svg';
 import Footer from '../Footer';
 import EventSlider from '../../components/EventSlider';
+import radioImage from '../../image/radioImage.png';
+import radioPlayer from '../../image/radioPlayer.svg';
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
-import anime from '../anime.json'
+import anime from '../anime.json';
 
 export default function LandingPage() {
   return (
@@ -97,19 +99,18 @@ export default function LandingPage() {
                 <Text>90,000+ Tonnes of Trash Recycled</Text>
               </Stack>
             </Stack>
-            
-              <Player
-                autoplay
-                loop
-                src={anime}
-                style={{ height: '300px', width: '300px' }}
-              >
-                <Controls
-                  visible={false}
-                  buttons={['play', 'repeat', 'frame', 'debug']}
-                />
-              </Player>
-           
+
+            <Player
+              autoplay
+              loop
+              src={anime}
+              style={{ height: '300px', width: '300px' }}
+            >
+              <Controls
+                visible={false}
+                buttons={['play', 'repeat', 'frame', 'debug']}
+              />
+            </Player>
           </Stack>
         </Container>
       </Box>
@@ -743,11 +744,71 @@ export default function LandingPage() {
         <EventSlider />
       </Box>
 
+      <Box
+        position={'absolute'}
+        width={'1248px'}
+        height={'301px'}
+        marginLeft={'134px'}
+        top={'5395px'}
+        backgroundColor={'#106804'}
+        borderRadius={'20px'}
+        zIndex={'1'}
+      >
+        <Image
+          position={'absolute'}
+          width={'287px'}
+          height={'282px'}
+          left={'11px'}
+          top={'10px'}
+          border={'1px solid #989898'}
+          borderRadius={'10px'}
+          src={radioImage}
+        />
+        <Text
+          position="absolute"
+          width="367px"
+          height="38px"
+          left={'345px'}
+          top="44px"
+          fontSize={{ base: '3xl', sm: '4xl', lg: '25px' }}
+          fontFamily={'karla'}
+          lineHeight={'150.9%'}
+          fontStyle={'normal'}
+          fontWeight={'500'}
+          color={'#ffffff'}
+        >
+          Join and Enjoy our Online Radio
+        </Text>
+        <Text
+          position="absolute"
+          width="187px"
+          height="30px"
+          left={'345px'}
+          top="83px"
+          fontSize={{ base: '3xl', sm: '4xl', lg: '20px' }}
+          fontFamily={'karla'}
+          lineHeight={'150.9%'}
+          fontStyle={'normal'}
+          fontWeight={'300'}
+          color={'#BEC8BD'}
+        >
+          Kunden Online Radio
+        </Text>
+        <Image
+          position={'absolute'}
+          width={'806'}
+          height={'134px'}
+          left={'345px'}
+          top={'136px'}
+          src={radioPlayer}
+        />
+      </Box>
       {/*###### FOOTER SECTION ######*/}
       <Box
         position={'absolute'}
         top={'5531px'}
         width={'100%'}
+        paddingTop={'148.46px'}
         bg={useColorModeValue('#F3FFF1', '#F3FFF1')}
       >
         <Footer />
