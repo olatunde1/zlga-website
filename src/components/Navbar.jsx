@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Outlet, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from '../image/logo.svg';
 import { Image } from '@chakra-ui/react';
+import About from './LandingPage/AboutUs/About';
 // import { ColorModeSwitcher } from '../ColorModeSwitcher'
 
 function NavBar() {
@@ -23,6 +25,7 @@ function NavBar() {
   }, []);
 
   return (
+    <>
     <Navbar.Wrapper>
       <Navbar.Logo>
         <Image src={logo} height={'50px'} />
@@ -34,10 +37,10 @@ function NavBar() {
 
       <Navbar.Items ref={drawerRef} openDrawer={openDrawer}>
         <Navbar.Item>
-          <a href="#pictureslider">Our Services</a>
+          <Link to="/">Our Services</Link>
         </Navbar.Item>
         <Navbar.Item>
-          <a href="#About">About Us</a>
+          <Link to="/about">About Us</Link>
         </Navbar.Item>
         <Navbar.Item>
           <a href="#gallery">ZL Store</a>
@@ -53,6 +56,8 @@ function NavBar() {
         </Navbar.Item> */}
       </Navbar.Items>
     </Navbar.Wrapper>
+    <Outlet />
+    </>
   );
 }
 

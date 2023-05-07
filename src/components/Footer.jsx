@@ -23,13 +23,13 @@ const ListHeader = ({ children }) => {
 
 export default function LargeWithLogoLeft() {
   return (
-    <Box  bg={useColorModeValue('#F3FFF1', '#F3FFF1')}>
+    <Box width={'1440px'}  bg={useColorModeValue('#F3FFF1', '#F3FFF1')} position={'absolute'} top={'4200px'}>
     <Box
         paddingTop={"313px"}
         paddingBottom={"208px"}
      
       color={useColorModeValue('#989898', '#989898')}>
-      <Container as={Stack} maxW={'7xl'} >
+      <Container as={Stack} maxW={'1440px'} >
         <SimpleGrid
           templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 1fr 1fr' }}
           spacing={8}>

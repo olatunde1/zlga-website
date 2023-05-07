@@ -2,13 +2,16 @@ import {
   chakra,
   Container,
   Stack,
+  Flex,
   Box,
   Heading,
   Text,
   Image,
+  SimpleGrid,
+  Button,
   useColorModeValue,
 } from '@chakra-ui/react';
-// import NavBar from '../Navbar';
+import NavBar from '../Navbar';
 import Map from '../../image/map.svg';
 import image1 from '../../image/partner/image1.svg';
 import image2 from '../../image/partner/image2.svg';
@@ -18,11 +21,19 @@ import image5 from '../../image/partner/image5.svg';
 import image6 from '../../image/partner/image6.svg';
 import Marquee from 'react-fast-marquee';
 import Slider from './Slider';
+import rec1 from '../../image/Rectangle1.svg';
+import rec2 from '../../image/Rectangle2.svg';
+import transform from '../../image/tranfromvideo.svg';
+import dr from '../../image/dr.svg';
+import fila from '../../image/fila.svg';
+import tobi from '../../image/tobi.svg';
+import Footer from '../Footer';
+import EventSlider from '../../components/EventSlider';
 
-export default function CallToActionWithVideo() {
+export default function LandingPage() {
   return (
     <>
-      {/* <NavBar /> */}
+      <NavBar />
       <Box
         position={'relative'}
         backgroundColor={'#F3FFF1'}
@@ -91,7 +102,7 @@ export default function CallToActionWithVideo() {
           </Stack>
         </Container>
       </Box>
-      <Box>
+      <Box position={'relative'}>
         <Marquee>
           <Image
             opacity="opacity(1) drop-shadow(0 0 gray)"
@@ -175,10 +186,10 @@ export default function CallToActionWithVideo() {
         </Marquee>
       </Box>
       <Slider />
-      <Box position={'relative'}>
+      <Box paddingBottom={'57.76px'} position={'relative'}>
         <Container maxW={'1440px'}>
           <Stack direction={{ base: 'column', md: 'row' }}>
-            <Stack>
+            <Stack position={'relative'}>
               <Heading>
                 <Text
                   position="absolute"
@@ -215,44 +226,352 @@ export default function CallToActionWithVideo() {
                 </Text>
               </Heading>
             </Stack>
+
             <Box
+              className="sepp"
+              width={'392px'}
+              height={'556px'}
+              marginLeft={'278px'}
+              top={'297px'}
+              position={'absolute'}
               borderWidth="1px"
-              _hover={{ shadow: 'lg' }}
-              rounded="md"
-              overflow="hidden"
-              bg={useColorModeValue('white', 'gray.800')}
+              boxShadow={
+                '2.02699px 4.05399px 20.2699px 3.04049px rgba(0, 0, 0, 0.1)'
+              }
+              borderRadius={'5.06748px'}
+              //   _hover={{ shadow: 'lg' }}
+              //   rounded="md"
+              //   overflow="hidden"
+              //   bg={useColorModeValue('white', 'gray.800')}
             >
               <Image
-                src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&auto=format&fit=crop&w=334&q=80"
-                objectFit="cover"
-                w="100%"
+                position={'absolute'}
+                src={rec1}
+                objectFit="contain"
+                w="373.98px"
+                h="325.33px"
+                left={'9.12px'}
+                top={'10.36px'}
               />
-              <Box p={{ base: 3, sm: 5 }}>
-                <Box mb={6}>
-                  <chakra.h3
-                    fontSize={{ base: 'lg', sm: '2xl' }}
-                    fontWeight="bold"
-                    lineHeight="1.2"
-                    mb={2}
+              <Box p={{ base: 3, sm: 5 }} position={'relative'}>
+                <Box mb={2}>
+                  <Text
+                    position={'absolute'}
+                    w={'365px'}
+                    h={'60px'}
+                    left={'14px'}
+                    top={'344px'}
+                    fontSize={{ base: 'lg', sm: '20px' }}
+                    fontWeight="500"
+                    lineHeight="150.9%"
+                    fontFamily={'karla'}
+                    fontStyle={'normal'}
+                    color={'#272727'}
+                    // mb={2}
                   >
-                    How to customize your Github Profile
-                  </chakra.h3>
-                  <Text fontSize={{ base: 'md', sm: 'lg' }} noOfLines={2}>
-                    How to customize your Github Profile Neque porro quisquam
-                    est qui dolorem ipsum quia dolor sit amet, consectetur,
-                    adipisci velit...
+                    Basic Sciences and Special Entry Prepartory Programme (SEPP)
+                  </Text>
+                  <Text
+                    position={'absolute'}
+                    w={'365px'}
+                    h={'44px'}
+                    left={'14px'}
+                    top={'409px'}
+                    fontSize={{ base: 'lg', sm: '17px' }}
+                    fontWeight="300"
+                    lineHeight="121.9%"
+                    fontFamily={'karla'}
+                    fontStyle={'normal'}
+                    color={'#989898'}
+                  >
+                    A remedy to deficiencies in one or two O/L requirements for
+                    a course of study.
                   </Text>
                 </Box>
-                <Stack
-                  justify="space-between"
-                  direction={{ base: 'column', sm: 'row' }}
-                  spacing={{ base: 2, sm: 0 }}
-                ></Stack>
+                <Button
+                  position={'absolute'}
+                  w={'260.47px'}
+                  h={'54.73px'}
+                  left={'65.88px'}
+                  top={'480.32px'}
+                  border={'0.506748px solid #106804'}
+                  background={'#ffffff'}
+                  borderRadius={'5.06748px'}
+                >
+                  Learn more
+                </Button>
               </Box>
+            </Box>
+            <Box
+              className="deptWaste"
+              width={'392px'}
+              height={'556px'}
+              left={'770px'}
+              top={'297px'}
+              position={'absolute'}
+              borderWidth="1px"
+              boxShadow={
+                '2.02699px 4.05399px 20.2699px 3.04049px rgba(0, 0, 0, 0.1)'
+              }
+              borderRadius={'5.06748px'}
+              //   _hover={{ shadow: 'lg' }}
+              //   rounded="md"
+              //   overflow="hidden"
+              //   bg={useColorModeValue('white', 'gray.800')}
+            >
+              <Image
+                position={'absolute'}
+                src={rec2}
+                objectFit="contain"
+                w="373.98px"
+                h="325.33px"
+                left={'9.12px'}
+                top={'10.36px'}
+              />
+              <Box p={{ base: 3, sm: 5 }}>
+                <Box mb={2}>
+                  <Text
+                    position={'absolute'}
+                    w={'365px'}
+                    h={'60px'}
+                    left={'14px'}
+                    top={'344px'}
+                    fontSize={{ base: 'lg', sm: '20px' }}
+                    fontWeight="500"
+                    lineHeight="150.9%"
+                    fontFamily={'karla'}
+                    fontStyle={'normal'}
+                    color={'#272727'}
+                    // mb={2}
+                  >
+                    Department of Waste Management Technology
+                  </Text>
+                  <Text
+                    position={'absolute'}
+                    w={'365px'}
+                    h={'44px'}
+                    left={'14px'}
+                    top={'409px'}
+                    fontSize={{ base: 'lg', sm: '17px' }}
+                    fontWeight="300"
+                    lineHeight="121.9%"
+                    fontFamily={'karla'}
+                    fontStyle={'normal'}
+                    color={'#989898'}
+                  >
+                    An holistic comprehension of solid and liquid waste
+                    management.
+                  </Text>
+                </Box>
+                <Button
+                  position={'absolute'}
+                  w={'260.47px'}
+                  h={'54.73px'}
+                  left={'65.88px'}
+                  top={'480.32px'}
+                  border={'0.506748px solid #106804'}
+                  background={'#ffffff'}
+                  borderRadius={'5.06748px'}
+                >
+                  Learn more
+                </Button>
+              </Box>
+            </Box>
+
+            <Box className="explore" top={'90px'}>
+              <Button
+                position={'absolute'}
+                w={'334px'}
+                h={'60px'}
+                top={'898.24px'}
+                background={'#106804'}
+                borderRadius={'5px'}
+                fontFamily={'Karla'}
+                lineHeight={'150.9%'}
+                fontSize={'20px'}
+                fontStyle={'normal'}
+                color={'#ffffff'}
+              >
+                Explore More Courses
+              </Button>
             </Box>
           </Stack>
         </Container>
       </Box>
+      <Box position={'relative'}>
+        <Heading>
+          <Text
+            position="absolute"
+            width="349px"
+            height="54px"
+            //   left={'545px'}
+            // paddingTop={'94px'}
+            fontSize={{ base: '3xl', sm: '4xl', lg: '36px' }}
+            fontFamily={'karla'}
+            lineHeight={'150.9%'}
+            fontStyle={'normal'}
+            fontWeight={'800'}
+            color={'#272727'}
+          >
+            {/* The Transformation */}
+          </Text>
+        </Heading>
+      </Box>
+      <Box
+        className="transformation"
+        position={'relative'}
+        width={'1440px'}
+        height={'812px'}
+        top={'1000px'}
+        // paddingTop={'74px'}
+      >
+        <Container></Container>
+      </Box>
+
+      <Box
+        position={'relative'}
+        top={'929'}
+        paddingBottom={'101.58px'}
+        height={'667px'}
+      >
+        <Container maxW={'1440px'}>
+          <Stack position={'relative'}>
+            <Stack>
+              <Text
+                position={'absolute'}
+                fontSize={'36px'}
+                top={'78px'}
+                left={'635px'}
+                fontFamily={'Karla'}
+                fontWeight={'800'}
+                lineHeight={'150.9%'}
+                color={'#272727'}
+              >
+                Our Team
+              </Text>
+              <Flex>
+                <Box>
+                  <Image
+                    position={'absolute'}
+                    height="438.48px"
+                    width="319.28px"
+                    left={'86px'}
+                    top={'140px'}
+                    src={dr}
+                  />
+                  <Box
+                    paddingTop={'48.65px'}
+                    position={'absolute'}
+                    width={'262px'}
+                    height={'72px'}
+                    top={'506.48px'}
+                    left={'118px'}
+                    textAlign={'center'}
+                  >
+                    <Text
+                      fontSize={'24px'}
+                      fontFamily={'Karla'}
+                      fontWeight={'400'}
+                      lineHeight={'150.9%'}
+                      color={'#272727'}
+                    >
+                      Dr. Mrs Abiola Bashorun
+                    </Text>
+                    <Text
+                      fontSize={'24px'}
+                      fontFamily={'Karla'}
+                      fontWeight={'400'}
+                      lineHeight={'150.9%'}
+                      color={'#989898'}
+                    >
+                      CEO/MD
+                    </Text>
+                  </Box>
+                </Box>
+                <Box>
+                  <Image
+                    position={'absolute'}
+                    height="401.42px"
+                    width="281px"
+                    left={'581px'}
+                    top={'164px'}
+                    src={fila}
+                  />
+                  <Box
+                    paddingTop={'48.65px'}
+                    position={'absolute'}
+                    width={'268px'}
+                    height={'72px'}
+                    top={'493.42px'}
+                    left={'590px'}
+                    textAlign={'center'}
+                  >
+                    <Text
+                      fontSize={'24px'}
+                      fontFamily={'Karla'}
+                      fontWeight={'400'}
+                      lineHeight={'150.9%'}
+                      color={'#272727'}
+                    >
+                      Mr. Abdulwahab Ibrahim
+                    </Text>
+                    <Text
+                      fontSize={'24px'}
+                      fontFamily={'Karla'}
+                      fontWeight={'400'}
+                      lineHeight={'150.9%'}
+                      color={'#989898'}
+                    >
+                      Managing Director
+                    </Text>
+                  </Box>
+                </Box>
+
+                <Box>
+                  <Image
+                    position={'absolute'}
+                    height="385.42px"
+                    width="332px"
+                    left={'1050px'}
+                    top={'179px'}
+                    src={tobi}
+                  />
+
+                  <Box
+                    paddingTop={'48.65px'}
+                    position={'absolute'}
+                    width={'286px'}
+                    height={'72px'}
+                    top={'492.42px'}
+                    left={'1075px'}
+                    textAlign={'center'}
+                  >
+                    <Text
+                      fontSize={'24px'}
+                      fontFamily={'Karla'}
+                      fontWeight={'400'}
+                      lineHeight={'150.9%'}
+                      color={'#272727'}
+                    >
+                      Mr. Tobi Benjamin
+                    </Text>
+                    <Text
+                      fontSize={'24px'}
+                      fontFamily={'Karla'}
+                      fontWeight={'400'}
+                      lineHeight={'150.9%'}
+                      color={'#989898'}
+                    >
+                      Deputy Managing Director
+                    </Text>
+                  </Box>
+                </Box>
+              </Flex>
+            </Stack>
+          </Stack>
+        </Container>
+      </Box>
+      <Footer />
     </>
   );
 }

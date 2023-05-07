@@ -29,7 +29,6 @@ export default function PictureSlider() {
   return (
     <>
       <Swiper
-        
         id='Slider'
         spaceBetween={30}
         centeredSlides={true}
