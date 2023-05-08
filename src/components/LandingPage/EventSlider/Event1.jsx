@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Container, Stack, Text, Image, Box } from '@chakra-ui/react';
-import event1 from '../../../image/event1.svg';
+import event1 from '../../../image/event1.png';
 
 const ProductIntro = () => {
   return (
@@ -39,11 +39,13 @@ const ProductIntro = () => {
       <Stack direction={{ base: 'column', md: 'row' }}>
       
           <Image
+           className='event1'
             position={'absolute'}
             left="155px"
             top="216px"
             w="1129px"
             h="505px"
+            
             // minW={{ base: '100%', md: '878.28px' }}
             objectFit="contain"
             src={event1}

@@ -35,7 +35,7 @@ export default function LargeWithLogoLeft() {
              
            
             <Text
-              width={'438px'}
+              width={{base:'340px', md:'438px'}}
               fontSize={'18px'}
               left={'100px'}
               fontFamily={'Karla'}

@@ -14,7 +14,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import NavBar from '../../Navbar';
-import meetteam from '../../../image/meetteam.svg'
+import meetteam from '../../../image/eventsummary.png'
 import manrun from '../../../image/manrun.svg'
 import drbash from '../../../image/drbashorun.svg'
 import ourlogo from '../../../image/ourlogo.svg'
@@ -45,50 +45,48 @@ const ReadMore = ({ children }) => {
 export default function About() {
   return (
     <>
-      {/* <NavBar /> */}
       <Box id='about'
-         top={'120px'}
-         height={'755px'}
-         backgroundColor={'#F3FFF1'}
-         paddingBottom={'8px'}
+        position={'absolute'}
+        top={'100px'}
+        height={{base:'400px', md:'755px'}}
+        width={'100%'}
+        backgroundColor={'#F3FFF1'}
       >
         <Container maxW={'1440px'}>
           <Box
-           
+           marginBottom={'116px'}
           >
             <Text
+                height={'40px'}
+                top={'77px'}
                 position={'absolute'}
-                fontSize={'34px'}
-               
-                paddingTop={'97px'}
-                paddingBottom={'37px'}
-                left={'165px'}
+                fontSize={{base:'24px', md:'34px'}}
+                left={{base:'100px', md:'165px'}}
                 width={'1110px'}
                 fontStyle={'normal'}
                 fontWeight={'700'}
                 fontFamily={'Karla'}
-                textAlign={'center'}
+                textAlign={{base:'left', md:'center'}}
                 lineHeight={'101.9%'}
                 color={'#272727'}
 
-            >MEET OUR TEEM</Text>
+            >MEET OUR TEAM</Text>
             <Image
                 position={'absolute'}
-                h={'505px'}
-                w={'1129px'}
+                h={{base:'60%', md:'505px'}}
+                w={{base:'800px', md:'1129px'}}
                 src={meetteam}
-                top={'100px'}
-                left={'185px'}
-                borderRadius={'20px'}
-
+                top={'134px'}
+                left={{base:'0px', md:'155px'}}
+                borderRadius={{base:'none', md:'20px'}}
             />
           </Box>
         </Container>
       </Box>
       <Box
-         position={'absolute'}
+        position={'absolute'}
         left={'0px'}
-        top={'855px'}
+        top={{base:'600px', md:'955px'}}
         height={'1077px'}
         width={'100%'}
         
@@ -97,30 +95,32 @@ export default function About() {
             
             <Box>
                 <Image
-                    height={'441px'}
-                    width={'619px'}
+                    height={{base:'200px', md:'441px'}}
+                    width={{base:'400px', md:'619px'}}
                     src={manrun}
-                    left={'101px'}
+                    left={{base:'0px', md:'101px'}}
                     top={'158px'}
-                    paddingLeft={'101px'}
+                    paddingLeft={{base:'0px', md:'101px'}}
+                    marginTop={{base:'100px'}}
                 />
             </Box>
             <Box>
                 <Image
+                  display={{base:'none'}}
                     position={'absolute'}
                         h={'65px'}
                         w={'65px'}
                         src={ourlogo}
-                        left={'770px'}
-                        top={'32px'}
+                        left={{base:'0px', md:'770px'}}
+                        top={{base:'240px', md:'32px'}}
         
                     />
                 <Text
                      position={'absolute'}
                      width={'200px'}
                      height={'30px'}
-                     left={'770px'}
-                     top={'100px'}
+                     left={{base:'20px', md:'770px'}}
+                     top={{base:'340px', md:'100px'}}
                      fontSize={'20px'}
                      fontStyle={'normal'}
                      lineHeight={'150.9%'}
@@ -131,8 +131,8 @@ export default function About() {
                 >OUR HISTORY</Text>
                 <Text
                     position={'absolute'}
-                    top={'144px'}
-                    left={'770px'}
+                    top={{base:'380px', md:'144px'}}
+                    left={{base:'20px', md:'770px'}}
                     width={'505px'}
                     height={'39px'}
                     fontSize={'32px'}
@@ -143,10 +143,10 @@ export default function About() {
                 >Who we are</Text>
                 <Text
                     position={'absolute'}
-                    top={'200px'}
-                    left={'770px'}
+                    top={{base:'440px', md:'200px'}}
+                    left={{base:'20px', md:'770px'}}
                     textAlign={'justify'}
-                    width={'572px'}
+                    width={{base:'380px', md:'572px'}}
                     height={'622px'}
                     fontSize={'24px'}
                     lineHeight={'150.9%'}
@@ -175,7 +175,7 @@ export default function About() {
       <Box
          position={'absolute'}
         left={'0px'}
-        top={'1632px'}
+        top={{base:'2150px', md:'1832px'}}
         height={'1173px'}
         width={'100%'}
         
@@ -183,6 +183,7 @@ export default function About() {
         <Container maxW={'1440px'}>
         <Box >
                 <Image
+                 display={{base:'none'}}
                     position={'absolute'}
                         h={'65px'}
                         w={'65px'}
@@ -195,8 +196,8 @@ export default function About() {
                      position={'absolute'}
                      width={'200px'}
                      height={'30px'}
-                     left={'101px'}
-                     top={'286px'}
+                     left={{base:'20px', md:'101px'}}
+                     top={{base:'740px', md:'286px'}}
                      fontSize={'20px'}
                      fontStyle={'normal'}
                      lineHeight={'150.9%'}
@@ -207,11 +208,11 @@ export default function About() {
                 >OUR CEO</Text>
                 <Text
                     position={'absolute'}
-                    top={'340px'}
-                    left={'101px'}
+                    top={{base:'780px', md:'340px'}}
+                    left={{base:'20px', md:'101px'}}
                     width={'505px'}
                     height={'39px'}
-                    fontSize={'32px'}
+                    fontSize={{base:'18px', md:'32px'}}
                     lineHeight={'123.4%'}
                     fontWeight={'700'}
                     fontFamily={'Karla'}
@@ -219,10 +220,10 @@ export default function About() {
                 >Dr. Mrs Abiola Bashorun FCIN</Text>
                 <Text
                     position={'absolute'}
-                    top={'390px'}
-                    left={'101px'}
+                    top={{base:'830px', md:'390px'}}
+                    left={{base:'20px', md:'101px'}}
                     textAlign={'justify'}
-                    width={'765px'}
+                    width={{base:'380px', md:'765px'}}
                     height={'802px'}
                     fontSize={'24px'}
                     lineHeight={'150.9%'}
@@ -240,7 +241,7 @@ export default function About() {
                     height={'449.29px'}
                     width={'438.35px'}
                     src={drbash}
-                    left={'892.82px'}
+                    left={{base:'0px', md:'892.82px'}}
                     top={'219.38px'}
                     // paddingLeft={'886px'}
                 />
@@ -253,7 +254,7 @@ export default function About() {
       <Box
          position={'absolute'}
         left={'0px'}
-        top={'2900px'}
+        top={{base:'4830px', md:'3100px'}}
         height={'1077px'}
         width={'100%'}
         
@@ -265,27 +266,28 @@ export default function About() {
                     height={'441px'}
                     width={'619px'}
                     src={empower}
-                    left={'101px'}
+                    left={{base:'0px', md:'101px'}}
                     top={'158px'}
-                    paddingLeft={'101px'}
+                    // paddingLeft={'101px'}
                 />
             </Box>
             <Box>
                 <Image
+                  display={{base:'none'}}
                     position={'absolute'}
                         h={'65px'}
                         w={'65px'}
                         src={empowericon}
-                        left={'770px'}
-                        top={'32px'}
+                        left={{base:'0px', md:'770px'}}
+                        top={{base:'0px', md:'32px'}}
         
                     />
                 <Text
                      position={'absolute'}
                      width={'298px'}
                      height={'30px'}
-                     left={'770px'}
-                     top={'110px'}
+                     left={{base:'20px', md:'770px'}}
+                     top={{base:'420px', md:'110px'}}
                      fontSize={'20px'}
                      fontStyle={'normal'}
                      lineHeight={'150.9%'}
@@ -296,11 +298,11 @@ export default function About() {
                 >OUR BENEFICIARIES</Text>
                 <Text
                     position={'absolute'}
-                    top={'144px'}
-                    left={'770px'}
-                    width={'505px'}
+                    left={{base:'20px', md:'770px'}}
+                    top={{base:'460px', md:'144px'}}
+                    width={{base:'300px', md:'505px'}}
                     height={'78px'}
-                    fontSize={'32px'}
+                    fontSize={{base:'24px', md:'32px'}}
                     lineHeight={'123.4%'}
                     fontWeight={'700'}
                     fontFamily={'Karla'}
@@ -308,10 +310,11 @@ export default function About() {
                 >Empowering Community Development</Text>
                 <Text
                     position={'absolute'}
-                    top={'230px'}
-                    left={'770px'}
+                    
+                    left={{base:'20px', md:'770px'}}
+                    top={{base:'550px', md:'230px'}}
                     textAlign={'justify'}
-                    width={'572px'}
+                    width={{base:'380px', md:'572px'}}
                     height={'305px'}
                     fontSize={'24px'}
                     lineHeight={'150.9%'}
@@ -335,7 +338,7 @@ export default function About() {
       </Box>
       <Box
         position={'absolute'}
-        top={'3500px'}
+        top={{base:'6000px', md:'3750px'}}
         width={'100%'} bg={useColorModeValue('#F3FFF1', '#F3FFF1')} 
       >
         <Footer />

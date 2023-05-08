@@ -10,7 +10,7 @@ import {
   theme,
 } from '@chakra-ui/react';
 import ReactDOM from "react-dom/client";
-import NavBar from './components/Navbar';
+import Nav from '../src/components/Navbar/Nav'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import LandingPage from './components/LandingPage/LandingPage.jsx';
@@ -25,7 +25,7 @@ function App() {
           {/* <ColorModeSwitcher justifySelf="flex-end" /> */}
           <BrowserRouter>
       <Routes>
-        <Route path="/" element={<NavBar />}>
+        <Route path="/" element={<Nav />}>
           <Route index element = {<LandingPage />} />
           <Route path="about" element= {<About />} />
           </Route>

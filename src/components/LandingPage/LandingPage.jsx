@@ -43,33 +43,41 @@ import EventSlider from '../../components/EventSlider';
 import radioImage from '../../image/radioImage.png';
 import radioPlayer from '../../image/radioPlayer.svg';
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
-import anime from '../anime.json';
+import anime from '../../anime.json';
 
 export default function LandingPage() {
   return (
     <>
-      <NavBar />
+      
       <Box
-        position={'relative'}
+        position={{base:'relative', md:'absolute'}}
         backgroundColor={'#F3FFF1'}
-        paddingTop={'5rem'}
-        paddingBottom={'162px'}
-        paddingLeft={'96px'}
+        // top={'100px'}
+        height={'866px'}
+        left={'0px'}
+        right={'0'}
+        width={'100%'}
+        // paddingTop={'5rem'}
+        // paddingBottom={'162px'}
+        // paddingLeft={'96px'}
       >
-        <Container maxW={'1440px'}>
+        <Container width={'1440px'}>
           <Stack direction={{ base: 'column-reverse', md: 'row' }}>
             <Stack
-              // direction="column"
-              align={'center'}
-              spacing={{ base: 8, md: 10 }}
-              py={{ base: 20, md: 28 }}
+              direction={{ base: 'column-reverse', md: 'row' }}
+              marginTop={{base:'296px', md:'96px'}}
             >
               <Heading
+                marginTop={{base:'266px', md:'0px'}}
+                top={'89px'}
+                left={{base:'4px', md:'96px'}}
+                position={'absolute'}
+                textAlign={{ md:'left', base:'center'}}
                 lineHeight={1.1}
-                textAlign="left"
-                fontSize={{ base: '3xl', sm: '4xl', lg: '72px' }}
+                fontSize={{ base: '4xl', sm: '4xl', lg: '72px' }}
                 fontFamily={'karla'}
                 fontWeight={'800'}
+                height={'252px'}
                 width={{ base: '100%', md: '679px' }}
               >
                 <Text as={'span'} color={'#000000'}>
@@ -81,10 +89,15 @@ export default function LandingPage() {
                 </Text>
               </Heading>
               <Text
-                textAlign="left"
+               paddingTop={{base:'256px', md:'0px'}}
+                position={'absolute'}
+                top={{base:'260px', md:'365px'}}
+                textAlign={{base:'justify', md:'none'}}
+                height={'108px'}
+                left={{base:'16px', md:'96px'}}
                 color={'#989898'}
-                maxWidth={{ base: '100%', md: '657px' }}
-                fontSize={'24px'}
+                width={{ base: '380px', md: '657px' }}
+                fontSize={{ base: '24px', sm: '4xl', lg: '24px' }}
                 fontFamily={'karla'}
               >
                 We are an alliance that covers a wide range of activities that
@@ -94,29 +107,96 @@ export default function LandingPage() {
               <Stack
                 spacing={{ base: 4, sm: 6 }}
                 direction={{ base: 'column', sm: 'row' }}
+                
               >
-                <Text>7000+ Employees</Text>
-                <Text>95% Customers Satisfaction</Text>
-                <Text>90,000+ Tonnes of Trash Recycled</Text>
+                <Text
+                  paddingTop={{base:'256px', md:'0px'}}
+                   position={'absolute'}
+                   width={{ base: '100%', md: '657px' }}
+                   height={'61px'}
+                   left={{ base: '24px', md: '96px' }}
+                   top={'510px'}
+                   color={'#106804'}
+                   fontSize={{ base: '24px', sm: '4xl', lg: '52px' }}
+                   fontFamily={'karla'}
+                   fontWeight={'700'}
+                   fontStyle={'normal'}
+                   lineHeight={'61px'}
+                >7000+</Text>
+                {/* <Text> Employees</Text> */}
+                <Text
+                paddingTop={{base:'256px', md:'0px'}}
+                   position={'absolute'}
+                   width={{ base: '100%', md: '102px' }}
+                   height={'61px'}
+                   left={{ base: '154px', md: '342px' }}
+                   top={{ base: '494px', md: '510px' }}
+                   color={'#106804'}
+                   fontSize={{ base: '24px', sm: '4xl', lg: '52px' }}
+                   fontFamily={'karla'}
+                   fontWeight={'700'}
+                   fontStyle={'normal'}
+                   lineHeight={'61px'}
+                >95%</Text>
+                {/* <Text>Customers Satisfaction</Text> */}
+                <Text
+                paddingTop={{base:'256px', md:'0px'}}
+                  position={'absolute'}
+                  width={{ base: '100%', md: '205px' }}
+                  height={'61px'}
+                  left={{ base: '260px', md: '552px' }}
+                  top={{ base: '494px', md: '510px' }}
+                  color={'#106804'}
+                  fontSize={{ base: '24px', sm: '4xl', lg: '52px' }}
+                  fontFamily={'karla'}
+                  fontWeight={'700'}
+                  fontStyle={'normal'}
+                  lineHeight={'61px'}
+                >90,000+</Text>
+                {/* <Text>Tonnes of Trash Recycled</Text> */}
               </Stack>
             </Stack>
-
-            <Player
-              autoplay
-              loop
-              src={anime}
-              style={{ height: '300px', width: '300px' }}
+            <Stack
+              position={'absolute'}
             >
-              <Controls
-                visible={false}
-                buttons={['play', 'repeat', 'frame', 'debug']}
-              />
-            </Player>
+              <Box
+                // position={'absolute'}
+                top={{base:'0px', md:'2px'}}
+                width={{base:'350px', md:'886px'}}
+                height={{base:'auto', md:'737.8px'}}
+                Left={{base:'0px', md:'623px'}}
+                marginLeft={{base:'0px', md:'100px'}}
+               
+              >
+                  <Player
+                  autoplay
+                  loop
+                  src={anime}
+                  style={{base:'300px', md:'892px'}}
+                >
+                  <Controls
+                    visible={false}
+                    buttons={['play', 'repeat', 'frame', 'debug']}
+                  />
+                </Player>
+              </Box>
+              
+            </Stack>
           </Stack>
         </Container>
       </Box>
-      <Box position={'relative'}>
-        <Marquee>
+
+      {/* ############# OUR PARTNER SECTION ################### */}
+      <Box
+        display={{base:'none', md:'block'}}
+        position={'absolute'}
+        width={'1440px'}
+        height={{base:'0px', md:'120px'}}
+        left={'0px'}
+        top={{base:'0px', md:'966px'}}
+        overflowX={'hidden'}
+      >
+        <Marquee  display={{base:'none', md:'block'}}>
           <Image
             opacity="opacity(1) drop-shadow(0 0 gray)"
             // position={{base:'none', md:'absolute'}}
@@ -341,7 +421,18 @@ export default function LandingPage() {
           />
         </Marquee>
       </Box>
-      <Slider />
+      
+      <Box
+         bg={'#F3FFF1'}
+         position={'absolute'}
+         width={'100%'}
+         height={'814px'}
+         left={'0px'}
+         top={{base:'',md:'1086px'}}
+      >
+           <Slider />
+      </Box>
+   
 
       <Box
         width={'1440px'}
@@ -357,7 +448,7 @@ export default function LandingPage() {
                   position="absolute"
                   width="196px"
                   height="54px"
-                  marginLeft={'622px'}
+                  marginLeft={{ base: '110px', md: '622px' }}
                   top="74px"
                   fontSize={{ base: '3xl', sm: '4xl', lg: '36px' }}
                   fontFamily={'karla'}
@@ -370,15 +461,15 @@ export default function LandingPage() {
                 </Text>
                 <Text
                   position="absolute"
-                  width="1238px"
+                  width={{ base: '380px', md: '1238px' }}
                   height="72px"
-                  marginLeft={'101px'}
+                  marginLeft={{ base: '', md: '101px' }}
                   top="138px"
-                  fontSize={{ base: '3xl', sm: '4xl', lg: '24px' }}
+                  fontSize={{ base: '2xl', sm: '4xl', lg: '24px' }}
                   fontFamily={'karla'}
                   lineHeight={'150.9%'}
                   fontStyle={'normal'}
-                  textAlign={'center'}
+                  textAlign={{base:'justify',md:'center'}}
                   fontWeight={'300'}
                   color={'#989898'}
                 >
@@ -393,8 +484,8 @@ export default function LandingPage() {
               className="sepp"
               width={'392px'}
               height={'556px'}
-              marginLeft={'278px'}
-              top={'297px'}
+              marginLeft={{ base: '', md: '278px' }}
+              top={{ base: '350px', md: '297px' }}
               position={'absolute'}
               borderWidth="1px"
               boxShadow={
@@ -472,8 +563,8 @@ export default function LandingPage() {
               className="deptWaste"
               width={'392px'}
               height={'556px'}
-              left={'770px'}
-              top={'297px'}
+              left={{ base: '0px', md: '770px' }}
+              top={{ base: '950px', md: '297px' }}
               position={'absolute'}
               borderWidth="1px"
               boxShadow={
@@ -551,7 +642,7 @@ export default function LandingPage() {
                 position={'absolute'}
                 w={'334px'}
                 h={'60px'}
-                top={'898.24px'}
+                top={{ base: '1600px', md: '898.24px' }}
                 background={'#106804'}
                 borderRadius={'5px'}
                 fontFamily={'Karla'}
@@ -571,8 +662,8 @@ export default function LandingPage() {
       <Box
         position={'absolute'}
         width={'100%'}
-        height={'812px'}
-        top={'2917'}
+        height={{ base: '500px', md: '812px' }}
+        top={{ base: '3600px', md: '3000px' }}
         backgroundColor={'#F3FFF1'}
       >
         <Heading>
@@ -580,7 +671,7 @@ export default function LandingPage() {
             position="absolute"
             width="349px"
             height="54px"
-            left={'545px'}
+            left={{ base: '60px', md: '545px' }}
             top={'74px'}
             fontSize={{ base: '3xl', sm: '4xl', lg: '36px' }}
             fontFamily={'karla'}
@@ -595,23 +686,24 @@ export default function LandingPage() {
         <Image
           className="roundGlobe"
           position={'absolute'}
-          width={'100%'}
-          height={'634px'}
+          width={{ base: '50%', md: '100%' }}
+          height={{ base: '50%', md: '634px' }}
           left={'0px'}
           top={'178px'}
         />
       </Box>
 
       {/*###### MEET THE TEAM SECTION ########*/}
-      <Box position={'absolute'} top={'3729px'} width={'100%'} height={'667px'}>
+      <Box position={'absolute'}
+      top={{ base: '4229px', md: '3900px' }} width={'100%'} height={'667px'}>
         <Container maxW={'1440px'}>
           <Stack position={'relative'}>
-            <Stack>
+            <Stack direction={{base:'column', md:'row'}}>
               <Text
                 position={'absolute'}
                 fontSize={'36px'}
-                top={'78px'}
-                left={'635px'}
+                top={{ base: '', md: '78px' }}
+                left={{ base: '110px', md: '635px' }}
                 fontFamily={'Karla'}
                 fontWeight={'800'}
                 lineHeight={'150.9%'}
@@ -619,23 +711,23 @@ export default function LandingPage() {
               >
                 Our Team
               </Text>
-              <Flex>
-                <Box>
+              <Flex flexDirection={{base:'column', md:'row'}}>
+                <Box flexDirection={{base:'column', md:'row'}}>
                   <Image
                     position={'absolute'}
                     height="438.48px"
                     width="319.28px"
-                    left={'86px'}
+                    left={{ base: '32px', md: '86px' }}
                     top={'140px'}
                     src={dr}
                   />
-                  <Box
+                  <Box 
                     paddingTop={'48.65px'}
                     position={'absolute'}
                     width={'262px'}
                     height={'72px'}
                     top={'506.48px'}
-                    left={'118px'}
+                    left={{ base: '62px', md: '118px' }}
                     textAlign={'center'}
                   >
                     <Text
@@ -658,13 +750,13 @@ export default function LandingPage() {
                     </Text>
                   </Box>
                 </Box>
-                <Box>
+                <Box flexDirection={{base:'column', md:'row'}}>
                   <Image
                     position={'absolute'}
                     height="401.42px"
                     width="281px"
-                    left={'581px'}
-                    top={'164px'}
+                    left={{ base: '52px', md: '581px' }}
+                    top={{ base: '664px', md: '164px' }}
                     src={fila}
                   />
                   <Box
@@ -672,8 +764,8 @@ export default function LandingPage() {
                     position={'absolute'}
                     width={'268px'}
                     height={'72px'}
-                    top={'493.42px'}
-                    left={'590px'}
+                    top={{ base: '993px', md: '493.42px' }}
+                    left={{ base: '62px', md: '590px' }}
                     textAlign={'center'}
                   >
                     <Text
@@ -697,13 +789,14 @@ export default function LandingPage() {
                   </Box>
                 </Box>
 
-                <Box>
+                <Box flexDirection={{base:'column', md:'row'}}>
                   <Image
                     position={'absolute'}
                     height="385.42px"
                     width="332px"
-                    left={'1050px'}
-                    top={'179px'}
+                    left={{ base: '28px', md: '1050px' }}
+                    top={{ base: '1164px', md: '179px' }}
+                  
                     src={tobi}
                   />
 
@@ -712,8 +805,8 @@ export default function LandingPage() {
                     position={'absolute'}
                     width={'286px'}
                     height={'72px'}
-                    top={'492.42px'}
-                    left={'1075px'}
+                    top={{ base: '1493px', md: '492.42px' }}
+                    left={{ base: '62px', md: '1075px' }}
                     textAlign={'center'}
                   >
                     <Text
@@ -745,7 +838,7 @@ export default function LandingPage() {
       <Box
         position={'absolute'}
         height={'849px'}
-        top={'4396px'}
+        top={'7396px'}
         width={'100%'}
         bg={useColorModeValue('#F3FFF1', '#F3FFF1')}
       >
@@ -757,7 +850,7 @@ export default function LandingPage() {
         width={'1248px'}
         height={'301px'}
         marginLeft={'134px'}
-        top={'5395px'}
+        top={'8395px'}
         backgroundColor={'#106804'}
         borderRadius={'20px'}
         zIndex={'1'}
@@ -811,10 +904,11 @@ export default function LandingPage() {
           src={radioPlayer}
         />
       </Box>
+      
       {/*###### FOOTER SECTION ######*/}
       <Box
         position={'absolute'}
-        top={'5531px'}
+        top={'9531px'}
         width={'100%'}
         paddingTop={'148.46px'}
         bg={useColorModeValue('#F3FFF1', '#F3FFF1')}

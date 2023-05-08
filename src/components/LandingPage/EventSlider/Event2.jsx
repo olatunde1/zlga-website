@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Container, Stack, Text, Image, Box } from '@chakra-ui/react';
-import event2 from '../../../image/event2.svg';
+import event2 from '../../../image/event2.png';
 
 const ProductIntro = () => {
   return (
