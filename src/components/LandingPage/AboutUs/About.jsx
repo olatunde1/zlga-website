@@ -1,19 +1,11 @@
 import { useState } from 'react';
 import {
-  chakra,
   Container,
-  Stack,
-  Flex,
-  Link,
   Box,
-  Heading,
   Text,
   Image,
-  SimpleGrid,
-  Button,
   useColorModeValue,
 } from '@chakra-ui/react';
-import NavBar from '../../Navbar';
 import meetteam from '../../../image/eventsummary.png'
 import manrun from '../../../image/manrun.svg'
 import drbash from '../../../image/drbashorun.svg'

@@ -8,9 +8,7 @@ import {
   useColorModeValue,
   Button,
   Image,
-  Skeleton,
   Box,
-  Link
 } from '@chakra-ui/react';
 import slide1 from '../../../image/slide1.svg'
 
