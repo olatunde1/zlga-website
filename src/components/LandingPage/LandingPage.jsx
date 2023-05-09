@@ -1,18 +1,15 @@
 import {
-  chakra,
   Container,
   Stack,
   Flex,
   Box,
   Heading,
   Text,
-  Image,
-  SimpleGrid,
   Button,
+  Image,
   useColorModeValue,
-  background,
 } from '@chakra-ui/react';
-import NavBar from '../Navbar';
+
 import image1 from '../../image/partner/im1.jpg';
 import image2 from '../../image/partner/im2.jpg';
 import image3 from '../../image/partner/im3.jpg';
@@ -34,7 +31,6 @@ import Marquee from 'react-fast-marquee';
 import Slider from './Slider';
 import rec1 from '../../image/Rectangle1.svg';
 import rec2 from '../../image/Rectangle2.svg';
-import transform from '../../image/tranfromvideo.svg';
 import dr from '../../image/dr.svg';
 import fila from '../../image/fila.svg';
 import tobi from '../../image/tobi.svg';

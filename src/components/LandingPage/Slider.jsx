@@ -1,5 +1,4 @@
-import { Box } from '@chakra-ui/react';
-import React, { useRef, useState } from 'react';
+import React, { useRef} from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import slide1 from './SlideSection/Slide1'

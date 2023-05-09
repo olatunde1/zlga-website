@@ -62,7 +62,7 @@ export default function About() {
                 position={'absolute'}
                 fontSize={{base:'24px', md:'34px'}}
                 left={{base:'100px', md:'165px'}}
-                width={'1110px'}
+                width={{base:'300px', md:'1110px'}}
                 fontStyle={'normal'}
                 fontWeight={'700'}
                 fontFamily={'Karla'}

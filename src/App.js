@@ -1,18 +1,10 @@
 import React from 'react';
 import {
   ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
   theme,
 } from '@chakra-ui/react';
-import ReactDOM from "react-dom/client";
 import Nav from '../src/components/Navbar/Nav'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ColorModeSwitcher } from './ColorModeSwitcher';
 import LandingPage from './components/LandingPage/LandingPage.jsx';
 import About from './components/LandingPage/AboutUs/About.jsx';
 import './style.css'

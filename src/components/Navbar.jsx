@@ -3,7 +3,7 @@ import { FiMenu, FiX } from 'react-icons/fi';
 import { Link, Outlet } from 'react-router-dom';
 import logo from '../image/logo.svg'
 import './Navbar/Navbar.css';
-import { chakra, Image} from '@chakra-ui/react';
+import { Image} from '@chakra-ui/react';
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
