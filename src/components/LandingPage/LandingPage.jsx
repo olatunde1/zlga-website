@@ -838,8 +838,9 @@ export default function LandingPage() {
       <Box
         position={'absolute'}
         height={'849px'}
-        top={'7396px'}
+        top={{ base: '5800px', md: '4700px' }}
         width={'100%'}
+        left={'0px'}
         bg={useColorModeValue('#F3FFF1', '#F3FFF1')}
       >
         <EventSlider />
@@ -847,31 +848,31 @@ export default function LandingPage() {
 
       <Box
         position={'absolute'}
-        width={'1248px'}
-        height={'301px'}
-        marginLeft={'134px'}
-        top={'8395px'}
+        width={{ base: '100%', md: '1248px' }}
+        height={{ base: '200px', md: '301px' }}
+        marginLeft={{ base: '', md: '134px' }}
+        top={{ base: '6800px', md: '5695px' }}
         backgroundColor={'#106804'}
-        borderRadius={'20px'}
+        borderRadius={{md:'20px'}}
         zIndex={'1'}
       >
         <Image
           position={'absolute'}
-          width={'287px'}
-          height={'282px'}
+          width={{ base: '180px', md: '287px' }}
+          height={{ base: '180px', md: '282px' }}
           left={'11px'}
           top={'10px'}
           border={'1px solid #989898'}
-          borderRadius={'10px'}
+          borderRadius={{md:'10px'}}
           src={radioImage}
         />
         <Text
           position="absolute"
-          width="367px"
+          width={{ base: '150px', md: '367px' }}
           height="38px"
-          left={'345px'}
-          top="44px"
-          fontSize={{ base: '3xl', sm: '4xl', lg: '25px' }}
+          left={{ base: '200px', md: '345px' }}
+          top={{base:'20px', md:"44px"}}
+          fontSize={{ base: '16px', sm: '4xl', lg: '25px' }}
           fontFamily={'karla'}
           lineHeight={'150.9%'}
           fontStyle={'normal'}
@@ -882,11 +883,11 @@ export default function LandingPage() {
         </Text>
         <Text
           position="absolute"
-          width="187px"
+          width={{ base: '187px', md: '187px' }}
           height="30px"
-          left={'345px'}
+          left={{ base: '200px', md: '345px' }}
           top="83px"
-          fontSize={{ base: '3xl', sm: '4xl', lg: '20px' }}
+          fontSize={{ base: '12px', sm: '4xl', lg: '20px' }}
           fontFamily={'karla'}
           lineHeight={'150.9%'}
           fontStyle={'normal'}
@@ -897,10 +898,10 @@ export default function LandingPage() {
         </Text>
         <Image
           position={'absolute'}
-          width={'806'}
+          width={{ base: '210px', md: '806px' }}
           height={'134px'}
-          left={'345px'}
-          top={'136px'}
+          left={{ base: '200px', md: '345px' }}
+          top={{ base: '80px', md: '136px' }}
           src={radioPlayer}
         />
       </Box>
@@ -908,7 +909,7 @@ export default function LandingPage() {
       {/*###### FOOTER SECTION ######*/}
       <Box
         position={'absolute'}
-        top={'9531px'}
+        top={{ base: '6880px', md: '5831px' }}
         width={'100%'}
         paddingTop={'148.46px'}
         bg={useColorModeValue('#F3FFF1', '#F3FFF1')}

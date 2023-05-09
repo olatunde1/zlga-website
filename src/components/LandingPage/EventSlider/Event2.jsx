@@ -11,8 +11,8 @@ const ProductIntro = () => {
       <Text
         position={'absolute'}
         fontSize={'36px'}
-        top={'74px'}
-        left={'660px'}
+        top={{ base: '123px', md: '74px' }}
+        left={{ base: '160px', md: '660px' }}
         fontFamily={'Karla'}
         fontWeight={'800'}
         lineHeight={'150.9%'}
@@ -22,12 +22,12 @@ const ProductIntro = () => {
       </Text>
       <Text
         position={'absolute'}
-        width={'1238px'}
-        top={'138px'}
-        left={'101px'}
+        width={{ base: '400px', md: '1238px' }}
+        top={{ base: '200px', md: '138px' }}
+        left={{ base: '0px', md: '101px' }}
         fontFamily={'Karla'}
         fontWeight={'300'}
-        fontSize={'24px'}
+        fontSize={{ base: '16px', md: '24px' }}
         lineHeight={'150.9%'}
         fontStyle={'normal'}
         color={'#989898'}
@@ -40,7 +40,7 @@ const ProductIntro = () => {
       
           <Image
             position={'absolute'}
-            left="155px"
+            left={{ base: '0px', md: '155px' }}
             top="216px"
             w="1129px"
             h="505px"
